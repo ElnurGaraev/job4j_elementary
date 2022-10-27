@@ -2,7 +2,6 @@ package ru.job4j;
 
 public class Multiple {
     public static void main(String[] args) {
-
         System.out.println("Garaev Elnur");
         System.out.println("26.10.2022");
         System.out.println("1*1=1");
