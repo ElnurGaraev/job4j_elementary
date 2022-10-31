@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConverterTest {
 
     @Test
-    void whenConvert140RblThen3Euro() {
+    void whenConvert140RblThen2Euro() {
         float expectedEuro = 2;
         float euro = Converter.rubleToEuro(140);
         float eps = 0.0001F;
@@ -16,7 +16,7 @@ class ConverterTest {
     }
 
     @Test
-    void whenConvert140RblThen3dot3333Dollar() {
+    void whenConvert140RblThen2dot3333Dollar() {
         float expectedDollar = 2.3333F;
         float dollar = Converter.rubleToDollar(140);
         float eps = 0.0001F;
