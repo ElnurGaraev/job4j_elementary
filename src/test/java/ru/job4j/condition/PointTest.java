@@ -9,8 +9,8 @@ public class PointTest {
 
     @Test
     public void when00To20Then2() {
-        double expected = 2;
-        double results = Point.distance(0, 0, 2, 0);
+         double expected = 2;
+         double results = Point.distance(0, 0, 2, 0);
         Assert.assertEquals(expected, results, 0.01);
     }
 
