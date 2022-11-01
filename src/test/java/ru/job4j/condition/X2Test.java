@@ -55,7 +55,7 @@ public class X2Test {
     public void whenA1B1C1X0Then1() {
         int expected = 1;
         int rsl5 = X2.calc(1, 1, 1, 0);
-        Assert.assertEquals(expected, rsl5);
+         Assert.assertEquals(expected, rsl5);
     }
 
 }
