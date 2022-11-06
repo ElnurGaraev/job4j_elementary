@@ -1,0 +1,45 @@
+package ru.job4j.loop;
+
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import static org.junit.Assert.*;
+
+public class FitnessTest {
+
+    @Test
+    public void whenIvanGreatNik() {
+        int ivan = 100;
+        int nik = 90;
+        int result = Fitness.calc(100, 90);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenIvanLessByOneNik() {
+        int ivan = 90;
+        int nik = 95;
+        int result = Fitness.calc(ivan, nik);
+        int expected = 1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenIvanLessBeFewNik() {
+        int ivan = 50;
+        int nik = 90;
+        int result = Fitness.calc(50, 90);
+        int expected = 2;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenIvanEqualsNik() {
+        int ivan = 90;
+        int nik = 90;
+        int result = Fitness.calc(90, 90);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
+}
