@@ -5,7 +5,6 @@ public class Factorial {
         int rsl = 1;
         for (int i = 2; i <= n; i++) {
             rsl *= i;
-            System.out.println(i);
         }
         return rsl;
     }
