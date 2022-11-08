@@ -7,7 +7,7 @@ public class Slash {
                 if (cell == row) {
                     System.out.print("O");
                 } else if (row + cell == size - 1) {
-                    System.out.print("0");
+                    System.out.print("O");
                 } else {
                     System.out.print(" ");
                 }
