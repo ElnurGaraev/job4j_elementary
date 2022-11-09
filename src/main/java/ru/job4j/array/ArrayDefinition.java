@@ -14,13 +14,9 @@ public class ArrayDefinition {
         names[1] = "Kate";
         names[2] = "Maria";
         names[3] = "Sergey";
-        String name = names[0];
-        System.out.println(name);
-        String name2 = names[1];
-        System.out.println(name2);
-        String name3 = names[2];
-        System.out.println(name3);
-        String name4 = names[3];
-        System.out.println(name4);
+        System.out.println(names[0]);
+        System.out.println(names[1]);
+        System.out.println(names[2]);
+        System.out.println(names[3]);
     }
 }
