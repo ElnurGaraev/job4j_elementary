@@ -11,7 +11,7 @@ public class ArrayDefinition {
 
         String[] names = new String[4];
         names[0] = "Kirill";
-        names[1] = "Alex";
+        names[1] = "Kate";
         names[2] = "Maria";
         names[3] = "Sergey";
         String name = names[0];
