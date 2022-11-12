@@ -12,7 +12,7 @@ public class MinDiapason {
     }
 
     public static void main(String[] args) {
-        int[] array = {4, 3, 2, 10};
+        int[] array = {4, 3, 1, 10};
         int start = 1;
         int finish = 3;
         System.out.println(findMin(array, start, finish));

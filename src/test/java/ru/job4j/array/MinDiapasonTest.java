@@ -9,11 +9,11 @@ public class MinDiapasonTest {
 
     @Test
     public void whenFistMin() {
-        int[] array = new int[]{-1, 0, 5, 10};
+        int[] array = new int[]{-1, 1, 5, 10};
         int start = 1;
         int finish = 3;
         int result = MinDiapason.findMin(array, start, finish);
-        int expected = 0;
+        int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
 
