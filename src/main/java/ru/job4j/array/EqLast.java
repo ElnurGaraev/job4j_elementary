@@ -6,8 +6,8 @@ public class EqLast {
     }
 
     public static void main(String[]args) {
-        int[] left = {1, 2, 3, 4, 5};
-        int[] right = {1, 2, 3, 4, 5};
+        int[] left = {1, 2, 3, 4, 7};
+        int[] right = {1, 2, 3, 4, 7};
         boolean rsl = check(left, right);
         System.out.println(rsl);
     }
