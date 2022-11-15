@@ -31,6 +31,16 @@ public class MatrixCheck {
         return rsl;
     }
 
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int index = 0; index < board.length; index++) {
+            if (monoHorizontal(board, index) || monoVertical(board, index)) {
+                result = true;
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         char[][] board = {{'X', ' ', ' '}, {'X', 'X', 'X'}, {'X', ' ', 'X'}};
         int row = 1;
@@ -45,5 +55,15 @@ public class MatrixCheck {
         for (int index = 0; index < rsl3.length; index++) {
             System.out.println(rsl3[index]);
         }
+
+        char[][] input = {
+                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' '},
+                {'X', 'X', 'X', 'X', 'X'},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean rsl4 = MatrixCheck.isWin(input);
+        System.out.println(rsl4);
     }
 }
