@@ -24,7 +24,7 @@ public class MatrixCheckTest {
         assertThat(result).isFalse();
     }
 
-    @org.junit.Test
+    @Test
     public void whenHasMonoVertical() {
         char[][] input = {{' ', ' ', 'X'}, {' ', ' ', 'X'}, {' ', ' ', 'X'}};
         int column = 2;
@@ -32,7 +32,7 @@ public class MatrixCheckTest {
         assertThat(result).isTrue();
     }
 
-    @org.junit.Test
+    @Test
     public void whenNotHasMonoVertical() {
         char[][] input = {{' ', 'X', 'X'}, {' ', 'X', 'X'}, {' ', ' ', 'X'}};
         int column = 1;
@@ -40,7 +40,7 @@ public class MatrixCheckTest {
         assertThat(result).isFalse();
     }
 
-    @org.junit.Test
+    @Test
     public void whenDiagonalFullX() {
         char[][] input = {
                 {'X', ' ', ' '},
@@ -51,7 +51,7 @@ public class MatrixCheckTest {
         assertThat(result).containsExactly(expected);
         }
 
-    @org.junit.Test
+    @Test
     public void whenDiagonalFullOne() {
         char[][] input = {
                 {'1', ' ', ' '},
@@ -62,7 +62,7 @@ public class MatrixCheckTest {
         assertThat(result).containsExactly(expected);
         }
 
-    @org.junit.Test
+    @Test
     public void whenDiagonalMix() {
         char[][] input = {
                 {'X', ' ', ' '},
@@ -73,7 +73,7 @@ public class MatrixCheckTest {
         assertThat(result).containsExactly(expected);
     }
 
-    @org.junit.Test
+    @Test
     public void whenDataMonoByTrueThenTrue() {
         char[][] input = {
                 {' ', ' ', 'X', ' ', ' '},
@@ -86,7 +86,7 @@ public class MatrixCheckTest {
         assertThat(result).isTrue();
     }
 
-    @org.junit.Test
+    @Test
     public void whenDataNotMonoByTrueThenFalse() {
         char[][] input = {
                 {' ', ' ', 'X', ' ', ' '},
@@ -99,7 +99,7 @@ public class MatrixCheckTest {
         assertThat(result).isFalse();
     }
 
-    @org.junit.Test
+    @Test
     public void whenDataHMonoByTrueThenTrue() {
         char[][] input = {
                 {' ', ' ', ' ', ' ', ' '},
